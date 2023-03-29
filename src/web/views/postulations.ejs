@@ -1,0 +1,164 @@
+<head>
+    <meta charset="UTF-8">
+    <title>Postulaciones - MineFastia</title>
+    <link rel="stylesheet" href="/stylesheets/apps-form.css">
+    <script src="https://kit.fontawesome.com/0f4ff8e724.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="alert" id="alert">
+        Alert
+    </div>
+    <form id="msform" action="/comunidad/postulacion" method="POST">
+        <div class="step step-1 active">
+            <div class="form-group">
+                <h2 class="fs-title">Formulario de postulacion</h2>
+                <hr>
+                <br>
+                <div class="row mb-4">
+                    <div class="col-md-6" style="position: relative;">
+                        <img src="https://i.imgur.com/XsMNNjv.png" class="img-rounded" alt="MineFastia Discord"
+                            width="735" height="350" style="border-radius: 2px;">
+                    </div>
+                </div>
+                <h3 class="fs-subtitle">Bienvenido/a <strong style="color: #f79dff;">
+                        <%= user.username %>
+                    </strong>
+                    a la planilla de reclutamiento de <strong style="color: #6f26af;">MineFastia</strong>, a
+                    continuacion tendras que rellenar
+                    algunos datos para que nosotros podamos evaluar si estas apto para el cargo. No hay un limite
+                    de tiempo requerido, tomate tu tiempo y lee bien las preguntas para no tener
+                    complicaciones a futuro.</h3>
+                <h3 class="fs-subtitle">Cualquier duda con respecto a la postulacion, puedes abrir una solictud
+                    mediante un mensaje directo a nuestro bot <strong style="color: #cf95ffe1;">@Sastia</strong> y
+                    un asesor te respondera lo
+                    antes posible. Sin mas preambulo <strong style="color: #27bd48e1;">¡Mucha suerte, aventurero/a!
+                        <i class="fas fa-hand-peace" style="font-size: 15px;"></i></strong>.</h3>
+                <button type="button" onclick="window.location.href='/';">Regresar</button>
+                <button type="button" class="next-btn">Empezar</button>
+            </div>
+        </div>
+        <div class="step step-2">
+            <div class="form-group">
+                <h2 class="fs-title"><i class="fas fa-address-card" style="font-size: 15px;"></i> Completa el siguiente formulario.</h2>
+                <h3 class="fs-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h3>
+                <hr>
+                <br>
+                <input id="inputQuestion" type="text" name="name" placeholder="Ingresa tu nombre">
+                <input id="inputQuestion" type="text" name="years" placeholder="¿Cuantos años tienes?">
+                <input id="inputQuestion" type="text" name="region" placeholder="Nacionalidad">
+                <div class="questions">
+                    <p style="background: #cccc;">Genero</p>
+                    <label>
+                        <select name="gender">
+                            <option value="Hombre">Hombre</option>
+                            <option value="Prefiero no decirlo" selected>Prefiero no decirlo</option>
+                            <option value="Mujer">Mujer</option>
+                        </select>
+                    </label>
+                </div>
+                <input id="inputQuestion" type="text" name="nameMC" placeholder="Nombre dentro del juego">
+                <button type="button" class="next-btn">Continuar</button>
+            </div>
+        </div>
+        <div class="step step-3">
+            <div class="form-group">
+                <h2 class="fs-title"><i class="fas fa-book" style="font-size: 15px;"></i>Formulario de postulación</h2>
+                <h3 class="fs-subtitle">A continuación se te haran unas breves preguntas, sé libre de contestarlas con tranquilidad, no hay un limite de tiempo.</h3>
+                <hr>
+                <div class="questions">
+                    <p id="s1_one">¿Estás estudiando, trabajando o te dedicas a algo? </p>
+                    <input id="inputQuestion" type="text" name="section_one_question_1">
+                    <p id="s1_two">¿Qué te gusta hacer en tu tiempo libre?</p>
+                    <input id="inputQuestion" type="text" name="section_one_question_2">
+                    <p id="s1_two">¿Cómo manejas tu vida?</p>
+                    <input id="inputQuestion" type="text" name="section_one_question_3">
+                </div>
+                <button type="button" class="next-btn">Continuar</button>
+            </div>
+        </div>
+        <div class="step step-4">
+            <div class="form-group">
+                <div class="questions">
+                    <p>¿Por qué te interesa ser miembro del personal? (Soporte de MineFastia)</p>
+                    <input id="inputQuestion" type="text" name="section_two_question_1">
+                    <p>¿Tuviste experiencias anteriormente en dicho puesto? ¿Hasta qué rango?</p>
+                    <input id="inputQuestion" type="text" name="section_two_question_2">
+                    <p>En caso de que hayas estado anteriormente, ¿Por qué te fuiste?</p>
+                    <input id="inputQuestion" type="text" name="section_two_question_3">
+                    <p>¿Qué es lo que te gusta y disgusta del servidor? ¿Mejorarías algo?</p>
+                    <input id="inputQuestion" type="text" name="section_two_question_4">
+                    <p>Cuéntame sobre algún problema que hayas cometido en algún servidor donde trabajaste, ¿Cómo lo solucionaste?</p>
+                    <input id="inputQuestion" type="text" name="section_two_question_5">
+                </div>
+                <button type="button" class="previous-btn">Regresar</button>
+                <button type="button" class="next-btn">Continuar</button>
+            </div>
+        </div>
+        <div class="step step-5">
+            <div class="form-group">
+                <div class="questions">
+                    <p>¿Hace cuánto tiempo conoces el servidor y que sabes sobre él?</p>
+                    <input id="inputQuestion" type="text" name="section_three_question_1">
+                    <p>¿Te gusta su comunidad? Explica</p>
+                    <input id="inputQuestion" type="text" name="section_three_question_2">
+                    <p>¿Alguna vez fuiste sancionado?</p>
+                    <input id="inputQuestion" type="text" name="section_three_question_3">
+                    <p>Del 1 al 10, puntúa tu manejo de Discord. Fundamenta tu respuesta</p>
+                    <input id="inputQuestion" type="text" name="section_three_question_4">
+                </div>
+                <button type="button" class="previous-btn">Regresar</button>
+                <button type="button" class="next-btn">Continuar</button>
+            </div>
+        </div>
+        <div class="step step-6">
+            <div class="form-group">
+                <div class="questions">
+                    <p>¿Cómo te manejas con el trabajo en equipo?</p>
+                    <input id="inputQuestion" type="text" name="section_four_question_1">
+                    <p>¿Aprendes de tus errores? ¿Tus experiencias te ayudaron a madurar?</p>
+                    <input id="inputQuestion" type="text" name="section_four_question_2">
+                    <p>¿Por qué te tendríamos que seleccionar a vos y al resto no?</p>
+                    <input id="inputQuestion" type="text" name="section_four_question_3">
+                    <p>Si se aceptara tu postulación, ¿cómo mejorarías la experiencia de los usuarios?</p>
+                    <input id="inputQuestion" type="text" name="section_four_question_4">
+                </div>
+                <button type="button" class="previous-btn">Regresar</button>
+                <button type="button" class="next-btn">Continuar</button>
+            </div>
+        </div>
+        <div class="step step-5">
+            <div class="form-group">
+                <h2 class="fs-title">Fin del formulario</h2>
+                <hr>
+                <h3 class="fs-subtitle">¡Oye, <strong>
+                        <%= user.username %>
+                    </strong> lo has hecho bien! Recuerda que puedes editar todo lo que tú
+                    quieres antes de enviar tus respuestas, usando el botón de <strong
+                        style="color: #6f26af;">regresar</strong>. De lo contrario, dale clic
+                    al botón de <strong style="color: brown;">FINALIZAR</strong> para que nuestro sistema registre
+                    tu postulación.</h3>
+                <div class="row mb-4">
+                    <div class="col-md-6" style="position: relative;">
+                        <img src="https://i.imgur.com/ctrNEXB.gif" class="img-rounded" alt="MineFastia Discord"
+                            width="650" height="350" style="border-radius: 2px;">
+                    </div>
+                </div>
+                <h3 class="fs-subtitle">Muchas gracias por tomarte el tiempo de rellenar este formulario, recuerda
+                    que cualquier duda con respecto a dicha postulación, puedes abrir una solictud
+                    mediante un mensaje directo a nuestro bot <strong style="color: #cf95ffe1;">@Sastia</strong> y
+                    un asesor te responderá lo
+                    antes posible.</strong>.</h3>
+                <button type="button" class="previous-btn">Regresar</button>
+                <button id="close" style="background-color: #582e7ae1;">Cancelar</button>
+                <button type="submit" id="finish" style="background-color: #b45afde1;">Finalizar</button>
+            </div>
+        </div>
+    </form>
+</body>
+
+<script src="/javascript/form-script.js"></script>
+
+</html>

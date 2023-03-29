@@ -1,0 +1,105 @@
+<head>
+    <meta charset="UTF-8">
+    <title>Inicio - MineFastia</title>
+    <%- include('partials/head') -%>
+</head>
+
+<body>
+    <%- include('partials/navbar') -%>
+         <div class="container-home">
+            <div class="website-title">
+                <br>
+                <br>
+                <% if(error.length > 0) { %><div class="alert alert-danger" role="danger"><%= error %></div><% } %>
+                <% if(message.length > 0) { %><div class="alert alert-success" role="alert"><%= message %></div><% } %>
+                <% if(info.length > 0) { %><div class="alert alert-warning" role="alert"><%= info %></div><% } %>
+                <% if(danger.length > 0) { %><div class="alert alert-danger" role="danger"><%= danger %></div><% } %>
+                <h1>Bienvenido al imperio de Mine<strong>Fastia</strong></h1>
+                <a style="color: #ccc; font-size: 20px;">Aquí encontrarás toda información relevante del servidor</a>
+            </div>
+        </div>
+
+        <main role="main" class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="announces">
+                        <span class="announces-item"><i class="fas fa-bullhorn"
+                                style="font-size: 15px; color: #d7a7ff;"></i> ¿Qué es MineFastia?</span>
+                        <h5><i class="fas fa-user" style="font-size: 15px;"></i><a href="/"> FastiaStudios</a> - 11 de
+                            Mayo</h5>
+                        <hr>
+
+                        <p>Somos un servidor de <strong>Minecraft</strong> no premium que empezó su viaje en mayo del
+                            2021 y desde entonces hemos trabajado arduamente para llevar el servidor adelante.
+                            Nuestro propósito es crear una comunidad totalmente agradable para todas las personas, dando
+                            lo mejor de nosotros para destacar. Por ello contamos con las siguientes modalidades:</p>
+                        <ul>
+                            <li><i class="fas fa-building"></i> SkyWars</li>
+                            <li><i class="fas fa-bed"></i> BedWars</li>
+                            <li><i class="fas fa-code"></i> Y survival, que actualmente se encuentra en fase de
+                                desarrollo.</li>
+                        </ul>
+                        <p>Este nuevo proyecto se hizo con mucha dedicación y entusiasmo; ofreciendo calidad, buena
+                            comunicación y diversión constante, ya que siempre estaremos sacando nuevo contenido para
+                            que no te aburras al jugar en nuestras modalidades.</p>
+                        <p><strong>¿Qué estás esperando? ¡Únete a esta gran aventura!</strong></p>
+                    </div>
+                    <br>
+                    <div class="announces">
+                        <span class="announces-item"><i class="fab fa-discord"
+                                style="font-size: 15px; color: #bf7df5;"></i> Servidor de Discord</span>
+                        <h5><i class="fas fa-user" style="font-size: 15px;"></i><a href="/"> FastiaStudios</a> - 28 de
+                            Mayo</h5>
+                        <hr>
+
+                        <p>La comunicación es la clave para crear algo maravilloso. Por lo cual, brindamos un servidor
+                            de
+                            <a href="/">Discord</a> y una forma de poder conectarnos todos juntos.
+                        </p>
+                        <div class="row mb-4">
+                            <div class="col-md-6" style="position: relative;">
+                                <img src="images/discord.png" class="img-rounded" alt="MineFastia Discord" width="650"
+                                    height="350" style="border-radius: 2px;">
+                            </div>
+                        </div>
+                        <p>Allí se mostrará toda la información importante respecto al servidor, cualquier
+                            duda/sugerencia relacionada con la plataforma,
+                            puedes visitar los canales de <strong>sugerencias</strong> y <strong>reportes</strong> para
+                            que unos de nuestros ayudantes te asesore en el proceso.</p>
+                    </div>
+                </div>
+
+                <aside class="col-md-4">
+                    <div class="container-left">
+                        <div class="p-3 mb-3">
+                            <a href="/" style="text-decoration: none;">
+                                <div class="question-item">
+                                    <h1><i class="fas fa-headset" style="font-size: 20px;"></i> ¿Necesitas ayuda?</h1>
+                                    <p>Ingresa en nuestro <strong>Discord</strong> para tener soporte inmediato.</p>
+                                </div>
+                            </a>
+                            <div class="shop-item">
+                                <span class="featured-item">Más popular</span>
+                                <div class="inner" style="margin-top: 20px;">
+                                    <div class="icon"></div>
+                                    <div class="name">Rango <strong style="color: #512f74;">Orquídea</strong></div>
+                                    <div class="price">$123</div>
+                                    <br>
+                                </div>
+                                <button type="button" class="btn btn-ligth"
+                                    style="background-color: #6f26af; color: white;"
+                                    onclick="window.location.href='https://tienda.minefastia.com'">Más información</button>
+                            </div>
+                            <a class="twitter-timeline" data-lang="es" data-width="500" data-height="650"
+                                data-dnt="true" data-theme="ligth"
+                                href="https://twitter.com/Satanshitt?ref_src=twsrc%5Etfw">Twitter de MineFastia</a>
+                            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </main>
+        <br>
+        <%- include('partials/footer') -%>
+</body>
+</html>

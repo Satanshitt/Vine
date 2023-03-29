@@ -1,0 +1,45 @@
+.container {
+    text-align: center;
+    background: rgb(247, 247, 247);
+} .departaments {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.header {
+    padding: 15px;
+    color: cornflowerblue;
+    margin: auto;
+    line-height: 50px;
+
+    background: darkblue;
+}
+
+.personal {
+    margin: 10px;
+    padding: 22px;
+    max-width: 30%;
+    box-sizing: border-box;
+} .personal img {
+    width: 200px;
+    height: 200px;
+} .name {
+    padding: 12px;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+} .role {
+    font-style: italic;
+    color: cyan;
+}
+
+@media screen and (max-width: 600px) {
+    .personal {
+        max-width: 100%;
+    }
+}
+
+
